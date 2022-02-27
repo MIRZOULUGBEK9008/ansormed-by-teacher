@@ -57,12 +57,14 @@ body {
 .site-logo-img {
   margin: 0;
   margin-right: 16px;
+  border-radius: 50%;
 }
 
 .site-logo-text {
   font-size: 24px;
   font-weight: 600;
   color: #222;
+  transition: color 0.3s ease;
 }
 
 .site-logo-text:hover {
@@ -91,6 +93,7 @@ body {
   font-weight: bold;
   font-size: 14px;
   color: #222;
+  transition: color 0.3s ease;
 }
 
 .site-nav-links:hover {
@@ -112,8 +115,6 @@ body {
   padding-bottom: 10px;
   padding-right: 22px;
   padding-left: 22px;
-  margin: 0;
-  margin-left: 115px;
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Open Sans Condensed";
@@ -121,6 +122,7 @@ body {
   font-weight: 700;
   letter-spacing: 2px;
   color: #fff;
+  transition: background-color 0.3s ease;
 }
 
 .main-link:hover {
@@ -131,6 +133,46 @@ body {
 
 .main-link:active {
   background-color: #DE2E54;
+  color: #fff;
+  opacity: 0.6;
+}
+
+
+/* SITE-FOOTER  */
+.site-footer {
+  background-color: #222;
+}
+
+.site-footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.site-footer-logo {
+  color: #fff;
+}
+
+.site-footer-logo:hover {
+  color: #DE2E54;
+}
+
+.site-footer-logo:active {
+  color: #fff;
+  opacity: 0.6;
+}
+
+.site-footer-links {
+  color: #fff;
+}
+
+.site-footer-links:hover {
+  color: #DE2E54;
+}
+
+.site-footer-links:active {
   color: #fff;
   opacity: 0.6;
 }
