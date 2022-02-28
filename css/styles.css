@@ -190,6 +190,72 @@ justify-content: space-between;
 }
 
 
+/* INDEX-SERVICES  */
+.index-services {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.index-services-heading {
+margin-top: 0;
+margin-bottom: 56px;
+text-align: center;
+font-family: "Open Sans Condensed";
+font-size: 36px;
+font-weight: 700;
+line-height: 1.2px;
+color: rgba(0, 0, 0, 1);
+}
+
+.index-services-list {
+  width: 864px;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  list-style: none;
+}
+
+.index-services-item:not(:last-child) {
+margin-bottom: 80px;
+}
+
+.index-service {
+  display: flex;
+  align-items: center;
+}
+
+.index-services-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 64px;
+  box-shadow: 0px 12px 24px -8px rgba(0, 107, 116, 0.3);
+  border-radius: 24px;
+}
+
+.index-services-content {
+  width: 600px;
+}
+
+.index-services-title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: "Open Sans Condensed";
+  font-style: 24px;
+  line-height: 1.2;
+  color: #222;
+}
+
+.index-services-description {
+  margin: 0;
+}
+
+.services-button-link {
+  display: flex;
+  justify-content: center;
+}
 
 
 
