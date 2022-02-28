@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -61,6 +65,7 @@ body {
 }
 
 .site-logo-text {
+  margin: 0;
   font-size: 24px;
   font-weight: 600;
   color: #222;
@@ -256,6 +261,46 @@ margin-bottom: 80px;
   display: flex;
   justify-content: center;
 }
+
+
+/* CTA  */
+.cta {
+  background-color: #0EB4C1;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  color: #fff;
+}
+
+.cta-heading {
+  margin-top: 0;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: "Open Sans Condensed";
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.cta-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-links:not(:last-child) {
+  margin-right: 40px;
+}
+
+.main-link-outline {
+  border-color: #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+.main-link-outline:hover {
+background-color: #DE2E54;
+color: #fff;
+}
+
 
 
 
