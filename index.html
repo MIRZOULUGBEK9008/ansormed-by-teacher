@@ -6,6 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AnsorMed</title>
 
+  <!-- FAVICON  -->
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="theme-color" content="#ffffff">
+
   <!-- Google Fonts  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +28,14 @@
 </head>
 <body>
 
+  <!-- LOADER  -->
+  <div class="lds-ripple-wrapper">
+    <div class="lds-ripple">
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
   <!-- SITE HEADER  -->
   <header class="site-header">
     <div class="site-header__container container">
@@ -31,30 +48,30 @@
 
 
       <!-- SITE NAVIGATOR  -->
-      <nav class="sitenav">
+      <nav class="sitenav site-header__sitenav">
 
-        <ul class="sitenav__list">
+        <ul class="sitenav__list sitenav__list--footer">
           <li class="sitenav__item">
-            <a class="sitenav__link" href="#">xizmatlar</a>
+            <a class="sitenav__link" href="#">Xizmatlar</a>
           </li>
           <li class="sitenav__item">
-            <a class="sitenav__link" href="#">dorilar</a>
+            <a class="sitenav__link" href="#">Dorilar</a>
           </li>
           <li class="sitenav__item">
-            <a class="sitenav__link" href="#">asal</a>
+            <a class="sitenav__link" href="#">Asal</a>
           </li>
           <li class="sitenav__item">
-            <a class="sitenav__link" href="#">kontaktlar</a>
+            <a class="sitenav__link" href="#">Kontaktlar</a>
           </li>
           <li class="sitenav__item">
-            <a class="sitenav__link" href="#">blog</a>
+            <a class="sitenav__link" href="#">Blog</a>
           </li>
         </ul>
 
       </nav>
 
       <!-- CTA  -->
-      <a class="cta-link" href="#index-cta">qabulga yozilish</a>
+      <a class="cta-link" href="#index-cta">Qabulga yozilish</a>
     </div>
   </header>
 
@@ -88,7 +105,7 @@
               <h3 class="services-list__title">Hijoma</h3>
               <p class="services-list__description">
                 Imom Termiziy Abdulloh ibn Abbos raziyallohu anhumodan rivoyat qilgan hadisda rasululloh sallallohu alayhi va sallam dedilar: «Sizlar hijoma qiladigan kunlaringizning eng yaxshisi 17, 19 va 21-kunlardir» (bu kunlar hijrij-kamariy hisobdagi oylar kunlaridir).</p>
-              </div>3
+              </div>
             </li>
 
             <li class="services-list__item">
@@ -109,7 +126,7 @@
               </li>
 
               <li class="services-list__item">
-                <img class="services-list__img" src="img/natural-medicine.jpg" alt="" aria-hidden="true" width="200" height="200" srcset="img/natural-medicine.jpg 1x, img/natural-medicine@2x.jpg 2x">
+                <img class="services-list__img" src="img/natural.jpg" width="200" height="200" alt="" aria-hidden="true" srcset="img/natural.jpg 1x, img/natural@2x.jpg 2x">
                 <div class="services-list__content">
                   <h3 class="services-list__title">Tabiiy dori vositalari</h3>
                   <p class="services-list__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac metus placerat, pellentesque enim ac, rhoncus lectus. Maecenas et posuere lorem. Fusce sed massa sit amet elit viverra hendrerit.</p>
@@ -143,31 +160,31 @@
       <footer class="site-footer">
         <div class="site-footer__container container">
 
-      <!-- LOGO  -->
-      <a class="logo" href="#">
-        <img class="logo__img" src="img/logo-icon.jpg" alt="AnsorMed logo" width="50" height="50" srcset="img/logo-icon.jpg 1x, img/logo-icon@2x.jpg 2x">
-        <span class="logo__text logo__text--footer">AnsorMed</span>
-      </a>
+          <!-- LOGO  -->
+          <a class="logo" href="#">
+            <img class="logo__img" src="img/logo-icon.jpg" alt="AnsorMed logo" width="50" height="50" srcset="img/logo-icon.jpg 1x, img/logo-icon@2x.jpg 2x">
+            <span class="logo__text logo__text--footer">AnsorMed</span>
+          </a>
 
 
           <!-- SITE NAVIGATOR  -->
-          <div class="sitenav">
+          <div class="sitenav site-footer__sitenav">
 
             <ul class="sitenav__list">
               <li class="sitenav__item">
-                <a class="sitenav__link sitenav__link--footer" href="#">xizmatlar</a>
+                <a class="sitenav__link" href="#">xizmatlar</a>
               </li>
               <li class="sitenav__item">
-                <a class="sitenav__link sitenav__link--footer" href="#">dorilar</a>
+                <a class="sitenav__link" href="#">dorilar</a>
               </li>
               <li class="sitenav__item">
-                <a class="sitenav__link sitenav__link--footer" href="#">asal</a>
+                <a class="sitenav__link" href="#">asal</a>
               </li>
               <li class="sitenav__item">
-                <a class="sitenav__link sitenav__link--footer" href="#">kontaktlar</a>
+                <a class="sitenav__link" href="#">kontaktlar</a>
               </li>
               <li class="sitenav__item">
-                <a class="sitenav__link sitenav__link--footer" href="#">blog</a>
+                <a class="sitenav__link" href="#">blog</a>
               </li>
             </ul>
 
