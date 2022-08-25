@@ -79,15 +79,22 @@
 
 
 /* GLOBAL  */
-* {
+html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  height: 100%;
 }
 
-html {
-  scroll-behavior: smooth;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 0;
   margin: 0;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -95,6 +102,10 @@ body {
   line-height: 1.5;
   color: #444;
   background-color: var(--white);
+}
+
+.body-overflow {
+  overflow-y: hidden;
 }
 
 *:focus {
@@ -158,6 +169,36 @@ body {
 
 .logo__text:hover {
   color: var(--red);
+}
+
+/* MENU  */
+.menu {
+  display: none;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 150;
+  flex-shrink: 0;
+}
+
+.menu__img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.menu__img-open--block {
+  display: none;
+}
+
+.menu__img-close {
+  display: none;
+}
+
+.menu__img-close--block {
+  display: block;
 }
 
 
@@ -378,7 +419,7 @@ body {
   margin: 0;
 }
 
-.index-services__button--red-wrapper {
+.index-services__button-wrapper {
   display: flex;
   justify-content: center;
 }
@@ -513,6 +554,61 @@ body {
 
 
 /* 800px */
-/* @media (max-width: 800px) {
+@media (max-width: 800px) {
+  .site-header__menu {
+    display: block;
+    margin-left: auto;
+  }
 
-} */
+  .site-footer__logo .logo__text {
+    display: none;
+  }
+
+  .sitenav__inner {
+    display: none;
+  }
+
+  .sitenav__inner--open {
+    display: block;
+  }
+
+  .sitenav__inner--open::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--white);
+  }
+
+  .sitenav__inner--open::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(223, 48, 86, 0.5);
+  }
+
+  .site-header__sitenav .sitenav__list {
+    position: absolute;
+    right: 4%;
+    top: 25%;
+    padding-right: 7%;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow-y: auto;
+    height: 100vh;
+  }
+
+  .site-header__sitenav .sitenav__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .site-header__sitenav .sitenav__item:nth-child(4) {
+    order: -1;
+  }
+}
